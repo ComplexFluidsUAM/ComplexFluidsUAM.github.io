@@ -1,9 +1,3 @@
-.map {
-	width: 100%;
-	margin: 100px 0;
-	height: 400px;
-}
-
 .contact-box {
 	@extend %flexbox;
 	@include flex-flow(wrap);
@@ -29,4 +23,8 @@
 	.contact-details {
 		font-size: .9em;
 	}
+}
+
+.contact-box label {
+    font-size: 200%;   
 }
