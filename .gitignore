@@ -1,0 +1,5 @@
+docs/_site
+*~
+*cache*
+Gemfile.lock
+

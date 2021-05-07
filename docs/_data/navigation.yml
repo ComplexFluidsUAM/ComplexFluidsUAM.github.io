@@ -1,11 +1,16 @@
-#- name: Pricing
-#  link: /pricing/
-#  new_window: false
-#  highlight: false
-#- name: Blog
-#  link: /blog/
-#  new_window: false
-#  highlight: false
+- name: Services
+  link: /services/
+  new_window: false
+  highlight: false
+- name: Blog
+  link: /blog/
+  new_window: false
+  highlight: false
+- name: Our software
+  link: /uammd/
+  new_window: false
+  highlight: false
+
 - name: About
   link: /about/
   new_window: false
