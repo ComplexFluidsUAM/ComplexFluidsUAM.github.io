@@ -1,26 +1,42 @@
 ---
-title: Blog
-description: Keep up with the latest news.
+title: Our Software
+description: We offer high performance computing solutions for researchers with easy to use interfaces.
 ---
 
-<div class="text-container">
-	<p class="editor-link"><a href="cloudcannon:collections/_posts" class="btn"><strong>&#9998;</strong> Add Post</a></p>
-	<ul class="blog-posts">
-		{% include list-posts.html posts=paginator.posts %}
-	</ul>
+<div class="content">
+  <section>
+    <div class="container flex">
+      <div class="text editable">
+	<h2>Universally Adaptable Multiscale Molecular Dynamics (UAMMD)</h2>
+	<p>
+	  Developed by Raul P. Pelaez as part of his PhD. studies, UAMMD is a generic multiscale modelling code running on NVIDIA Graphical processors.
+	  UAMMD can simulate the dynamics of millions of particles submerged in fluids on multiple spatio-temporal scales, including molecular dynamics, brownian dynamics, fluctuating hydrodynamics and more!
+	  UAMMD is open source and presented with a GPL license, you can check it out on <a href="https://github.com/RaulPPelaez/UAMMD">github</a>.
+	  Now UAMMD is used in several research groups all around the world and it is being actively developed by Raul and the rest of the complex fluids team.	  
+	</p>
+      </div>
+      <div class="image">
+	<img src="{{ site.baseurl }}/images/shotlogo.png" alt="Screenshot" class="screenshot editable"  
+	 style="object-fit:scale-down; max-height: 400px;"/>
+      </div>
+    </div>
+  </section>
+</div>
 
-	{% if paginator.total_pages > 1 %}
-		<!-- Pagination links -->
-		<div class="pagination">
-			{% if paginator.previous_page %}
-				<a href="{% include relative-src.html src=paginator.previous_page_path %}" class="previous btn">&larr; Newer posts</a>
-			{% endif %}
-
-			<span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
-
-			{% if paginator.next_page %}
-				<a href="{% include relative-src.html src=paginator.next_page_path %}" class="next btn">Older posts &rarr;</a>
-			{% endif %}
-		</div>
-	{% endif %}
+<div class="content">
+  <section>
+    <div class="container flex">
+      <div class="text editable">
+	<h2>Virtual QCM User interface</h2>
+	<p>
+	  To facilitate the usage of our advanced software we are developing a graphical user interface.
+	  This GUI is protected by a commercial license. If you are interested in using it please contact us!
+	</p>
+      </div>
+      <div class="image">
+	<img src="{{ site.baseurl }}/images/gui.png" alt="Screenshot" class="screenshot editable"  
+	 style="object-fit:scale-down; max-height: 400px;"/>
+      </div>
+    </div>
+  </section>
 </div>
